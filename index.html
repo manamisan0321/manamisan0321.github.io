@@ -1,1 +1,188 @@
-aoueou9
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header id="header" class="fade-in">
+    <div class="container">
+      <h1 class="logo">Your Name</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section slide-up">
+    <div class="container hero-content">
+      <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+      <p>Front-End Engineer &amp; Designer</p>
+      <a href="#work" class="btn btn-primary">See My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section fade-in">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text slide-up">
+          <p>Passionate front-end developer with a knack for creating engaging user experiences. I specialize in responsive design, animation, and modern web technologies.</p>
+          <p>I graduated from XYZ University with a degree in Computer Science and have over 5 years of experience in creating interactive web applications.</p>
+        </div>
+        <div class="about-image slide-in">
+          <img src="profile.jpg" alt="Your Name">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="section work-section fade-in">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="work-grid">
+        <!-- Project Item 1 -->
+        <div class="work-item slide-up">
+          <a href="https://project1.example.com" target="_blank">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="work-info">
+              <h3>Project One</h3>
+              <p>Responsive web application built with React and Tailwind CSS.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Project Item 2 -->
+        <div class="work-item slide-up" data-delay="100">
+          <a href="https://project2.example.com" target="_blank">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="work-info">
+              <h3>Project Two</h3>
+              <p>Interactive dashboard using D3.js and TypeScript.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Project Item 3 -->
+        <div class="work-item slide-up" data-delay="200">
+          <a href="https://project3.example.com" target="_blank">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="work-info">
+              <h3>Project Three</h3>
+              <p>Mobile-first design implemented with Vue.js and GSAP animations.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Project Item 4 -->
+        <div class="work-item slide-up" data-delay="300">
+          <a href="https://project4.example.com" target="_blank">
+            <img src="project4.jpg" alt="Project 4">
+            <div class="work-info">
+              <h3>Project Four</h3>
+              <p>Custom e-commerce platform with performance optimizations.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section fade-in">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <ul class="skills-list slide-up">
+        <li>HTML5 &amp; CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
+        <li>React / Vue / Angular</li>
+        <li>GSAP / ScrollMagic</li>
+        <li>Webpack / Vite</li>
+        <li>Git &amp; GitHub</li>
+        <li>Figma &amp; Sketch</li>
+        <li>Responsive &amp; Mobile-First</li>
+        <li>Performance Optimization</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section slide-up">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required placeholder="Your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <ul class="social-links slide-up">
+        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+        <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top fade-in" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
+  <!-- Modal Overlay for Contact Prompt -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal slide-up">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h2>Let’s Connect!</h2>
+      <p>Interested in working together? Drop me a message and I’ll get back to you shortly.</p>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieConsent" class="cookie-consent slide-up">
+    <p>このサイトはクッキーを使用しています。続行すると同意したものとみなします。</p>
+    <button id="acceptCookies" class="btn btn-primary">了解しました</button>
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    // HTML側で必要な軽微なフォールバックや設定をここに記述
+    // 実際のスクロールアニメーションは外部 script.js で制御します
+  </script>
+</body>
+</html>
